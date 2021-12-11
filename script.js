@@ -14,7 +14,7 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 
-var specialSybmbols = "!, @, #, $, %, ^, &, *. ), (,";
+var specialSybmbols = ["!", "@", "#", "$", "%", "^", "&", "*", ")", "("];
 
 console.log(specialSybmbols);
 
