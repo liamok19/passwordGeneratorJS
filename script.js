@@ -26,3 +26,4 @@ var numbers = 12345678910;
 
 console.log(numbers);
 
+var userChoice = window.prompt("Your Password must be between 8-128 characters long. Would you like to include Upper Case, type #Y for yes or N for no");
