@@ -1,7 +1,6 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-
 //seperate variable strings. 
 var numbers = ["0","1","2","3","4","5","6","7","8","9","10"];
 var specialSybmbols = ["!", "@", "#", "$", "%", "^", "&", "*", ")", "("];
@@ -10,28 +9,27 @@ var upperCaseLetters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N",
 //empty array below 
 var chosenPassword = [];
 
-function generatePassword () 
+function generatePassword () {
 
+var passwordLength = window.prompt ("Let's begin with you choosen a length for your password it must be between 8-128 characters long!" );
 
-var passowordLength = window.prompt ("Let's begin with you choosen a length for your password it must be between 8-128 characters long." );
-
-if (Number.isNaN(passowordLength)){
-  window.alert ("Please chose a number");
+if (isNaN(passwordLength)) {
+  window.alert ("Please chose a number!");
   return generatePassword();
 }
 
-if (password.length < 8 || password.length > 128) {
-  window.alert ("The number must be between 8 - 128");
+if (passwordLength < 8 || passwordLength > 128) {
+  window.alert ("The number must be between 8 - 128!");
   return generatePassword();
 }
 
-var requestNumbers = window.prompt ("Click 'Ok' to include Numbers, otherwise hit Cancel")
-var requestSymbols = window.prompt ("Click 'Ok' to include Symbols, otherwise hit Cancel")
-var requestLowercase = window.prompt ("Click 'Ok' to include Lowercase, otherwise hit Cancel")
-var requestUppercase = window.prompt ("Click 'Ok' to include Uppercase, otherwise hit Cancel")
+var requestNumbers = window.confirm ("Click 'Ok' to include Numbers, otherwise hit Cancel !")
+var requestSymbols = window.confirm ("Click 'Ok' to include Symbols, otherwise hit Cancel !")
+var requestLowercase = window.confirm ("Click 'Ok' to include Lowercase, otherwise hit Cancel !")
+var requestUppercase = window.confirm ("Click 'Ok' to include Uppercase, otherwise hit Cancel !")
 
 if (!requestNumbers && !requestSymbols && !requestLowercase && !requestUppercase) {
-  window.alert ("In the following windows, please select a character for each")
+  window.alert ("In the following windows, please select a character for each !")
   return generatePassword();
 }
 
@@ -51,12 +49,14 @@ if (requestUppercase = true){
   chosenPassword.push(...upperCaseLetters);
 }
 
+var result = "";
 
-for (var i = 0; i <=passwordLength; i++){
-  var numberRandom = Math.floor(Math.random() * charsFullString.length);
-  password += charsFullString.substring(numberRandom, numberRandom +1);
-
+for (i = 0; i<passwordLength; i++){
+  var index = Math.floor(Math.random() * chosenPassword.length);
+  result += chosenPassword[index];
 }
+
+return result;
 
 
 // Write password to the #password input
@@ -72,7 +72,7 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 //keep this in for the moment. But comment out
-// document.getElementById("password").value = password;
+document.getElementById("password").value = password;
 
 
 
