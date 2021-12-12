@@ -1,17 +1,6 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
-}
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
 
 //seperate variable strings. 
 var numbers = ["0","1","2","3","4","5","6","7","8","9","10"];
@@ -41,9 +30,27 @@ var requestSymbols = window.prompt ("Click 'Ok' to include Symbols, otherwise hi
 var requestLowercase = window.prompt ("Click 'Ok' to include Lowercase, otherwise hit Cancel")
 var requestUppercase = window.prompt ("Click 'Ok' to include Uppercase, otherwise hit Cancel")
 
-if (requestNumbers = true){
-  chosenPassword.push
+if (!requestNumbers && !requestSymbols && !requestLowercase && !requestUppercase) {
+  window.alert ("In the following windows, please select a character for each")
+  return generatePassword();
 }
+
+if (requestNumbers = true){
+  chosenPassword.push(...numbers);
+}
+
+if (requestSymbols = true){
+  chosenPassword.push(...specialSybmbols);
+}
+
+if (requestLowercase = true){
+  chosenPassword.push(...lowerCaseLetters);
+}
+
+if (requestUppercase = true){
+  chosenPassword.push(...upperCaseLetters);
+}
+
 
 for (var i = 0; i <=passwordLength; i++){
   var numberRandom = Math.floor(Math.random() * charsFullString.length);
@@ -51,7 +58,23 @@ for (var i = 0; i <=passwordLength; i++){
 
 }
 
-document.getElementById("password").value = password;
+
+// Write password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
+
+}
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
+
+//keep this in for the moment. But comment out
+// document.getElementById("password").value = password;
+
+
 
 // var yesUppercase = "Y";
 // var noUppercase = "N";
