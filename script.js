@@ -18,8 +18,8 @@ var numbers = ["0","1","2","3","4","5","6","7","8","9","10"];
 var specialSybmbols = ["!", "@", "#", "$", "%", "^", "&", "*", ")", "("];
 var lowerCaseLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j","k", "l", "m", "n", "o", "p", "q", "r","s","t","u","v","w","x","y","z"];
 var upperCaseLetters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
-//empty string below
-var chosenPassword = "";
+//empty array below 
+var chosenPassword = [];
 
 function generatePassword () 
 
@@ -41,6 +41,9 @@ var requestSymbols = window.prompt ("Click 'Ok' to include Symbols, otherwise hi
 var requestLowercase = window.prompt ("Click 'Ok' to include Lowercase, otherwise hit Cancel")
 var requestUppercase = window.prompt ("Click 'Ok' to include Uppercase, otherwise hit Cancel")
 
+if (requestNumbers = true){
+  chosenPassword.push
+}
 
 for (var i = 0; i <=passwordLength; i++){
   var numberRandom = Math.floor(Math.random() * charsFullString.length);
