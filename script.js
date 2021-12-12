@@ -13,13 +13,45 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-var chars = "12345678910abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var passwordLength = (8 );
+var charsFullString = "12345678910abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var charsNoUppercase = "12345678910abcdefghijklmnopqrstuvwxyz!@#$%^&*()";
+var charsNoUppercaseYesNumber = "12345678910abcdefghijklmnopqrstuvwxyz!@#$%^&*()";
+var charsNoUppercaseNoNumber = "abcdefghijklmnopqrstuvwxyz!@#$%^&*()";
+var charsYesUppercaseNoNumber = "abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var charsYesUppercaseNoNumberYesSymbol = "abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var charsYesUppercaseNoNumberNoSymbol = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+
+
+var passwordLength = ( 8 );
 var password = "";
 
+var userChoice = window.prompt("Your Password must be between 8-128 characters long. Would you like to include Upper Case, type Y for yes or N for no");
+
+//ending function add cancel
+// if (!userChoice) {
+//   return;
+// }
+
+var yesUppercase = "Y";
+var noUppercase = "N";
+
+if (userChoice === yesUppercase){
+  window.alert("You chose YAS to Uppercase. Click ok for the next step");
+} else (userChoice === noUppercase); {
+  window.alert("You chose no to Uppercase. Click ok for the next step ");
+}
+
+var userChoice = window.prompt("Would you like numbers");
+
+
+var userChoice = window.prompt("Would you like symbols");
+
+
+
 for (var i = 0; i <=passwordLength; i++){
-  var randomNumber = Math.floor(Math.random() * chars.length);
-  password += chars.substring(randomNumber, randomNumber +1);
+  var numberRandom = Math.floor(Math.random() * charsFullString.length);
+  password += charsFullString.substring(numberRandom, numberRandom +1);
 
 }
 
