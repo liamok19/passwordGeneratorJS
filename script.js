@@ -9,13 +9,14 @@ var upperCaseLetters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N",
 //empty array below 
 var chosenPassword = [];
 
+
 function generatePassword () {
 
 var passwordLength = window.prompt ("Let's begin with you choosen a length for your password it must be between 8-128 characters long");
 
 
 if (isNaN(passwordLength)) {
-  window.alert ("Please chose a number!");
+  window.alert ("Please choose a number");
   return generatePassword();
 }
 
@@ -24,33 +25,39 @@ if (passwordLength < 8 || passwordLength > 128) {
   return generatePassword();
 }
 
-var requestNumbers = window.confirm ("Click 'Ok' to include Numbers, otherwise hit Cancel !");
-var requestSymbols = window.confirm ("Click 'Ok' to include Symbols, otherwise hit Cancel !");
-var requestLowercase = window.confirm ("Click 'Ok' to include Lowercase, otherwise hit Cancel !");
-var requestUppercase = window.confirm ("Click 'Ok' to include Uppercase, otherwise hit Cancel !");
+var requestNumbers = window.confirm ("Click 'Ok' to include Numbers, otherwise hit Cancel");
+var requestSymbols = window.confirm ("Click 'Ok' to include Symbols, otherwise hit Cancel");
+var requestLowercase = window.confirm ("Click 'Ok' to include Lowercase, otherwise hit Cancel");
+var requestUppercase = window.confirm ("Click 'Ok' to include Uppercase, otherwise hit Cancel");
+
 
 if (!requestNumbers && !requestSymbols && !requestLowercase && !requestUppercase) {
   window.alert ("In the following windows, please select a character for each !");
   return generatePassword();
 }
 
-if (requestNumbers = true){
+
+if (requestNumbers){
   chosenPassword.push(...numbers);
-} else (requestNumbers = false){
-  chosenPassword.pop (...numbers);
-}
+} 
 
-if (requestSymbols = true){
+if (requestSymbols){
   chosenPassword.push(...specialSybmbols);
-}
+} 
 
-if (requestLowercase = true){
+if (requestLowercase){
   chosenPassword.push(...lowerCaseLetters);
 }
+//  else (_requestLowercase = false)=>{
+//   chosenPassword.pop(...lowerCaseLetters);
+// }
 
 if (requestUppercase = true){
   chosenPassword.push(...upperCaseLetters);
 }
+//  else (_requestUppercase = false)=>{
+//   chosenPassword.pop(...upperCaseLetters);
+// }
 
 var result = "";
 
