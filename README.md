@@ -43,13 +43,31 @@
 ## Assets
 User Steps 
 
-![step1user](../passwordGeneratorJS/assets/images/reference/step1user)
+Step1 - User is prompt with the following:
+![step1user](../passwordGeneratorJS/assets/images/reference/step1user.JPG)
 
+Step 1 (a) Alert when user doesn't put a number in between 8-128. 
+![step1_a_user](../passwordGeneratorJS/assets/images/reference/step1_a_user.JPG)
 
-The following image demonstrates the web application's default appearance and functionality: 
+Step 1 (b) Alert when user doesn't put in a number. 
+![step1_b_user](../passwordGeneratorJS/assets/images/reference/step1_b_user.JPG)
 
-![Outcome_Image](../liamo_portfolio/assets/images/liamo_portfolio_index.png)
+Step2 - User is prompt with the following. Click ok to include chosen category in PW.
+![step2number](../passwordGeneratorJS/assets/images/reference/step2_number.JPG)
 
+Step3 - User is prompt with the following. Click ok to include chosen category in PW.
+![step3symbol](../passwordGeneratorJS/assets/images/reference/step3_symbol.JPG)
+
+Step4 - User is prompt with the following. Click ok to include chosen category in PW.
+![step4lowercaseletters](../passwordGeneratorJS/assets/images/reference/step4_lowerCaseLetters.JPG)
+
+Step5 - User is prompt with the following. Click ok to include chosen category in PW.
+![step4uppercaseletters](../passwordGeneratorJS/assets/images/reference/step5_upperCaseLetters.JPG)
+
+*cue drum roll*
+
+Step 6 - A result is diplayed in the window below. 
+![step6_result](../passwordGeneratorJS/assets/images/reference/step6_result.JPG)
 
 ## Links
 - Github link for reference is below: 
