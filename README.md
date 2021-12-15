@@ -2,22 +2,22 @@
 
 * Key: PW = Password.
 
-1. Decalre variables at the beginning. Strings for each category. Numbers, Symbols, lowcaseAlphabet and UppercaseAlphabet. 
-2. Objective. When the user clicks the "Generator button" an alert box pop up and asks the following: 
+1. Declare variables at the beginning. Strings for each category. Numbers, Symbols, LowcaseLetters and UppercaseLetters. 
+2. Objective: When the user clicks the "Generator button" an alert asks the following: 
     1. How many numbers from 8-128 would you like to choose from.
-        1. Window alert. User must provide a value within these constraints. 
+        1. Window alert. User must provide a value within this number range. 
         2. Window alert. User must provide a number with these constraints.
-    2. Would you like Upper case for your PW?
-        1. 'ok' - True to push uppercase to be part of the PW. 
+    2. Would you like Lower Case letters for your PW?
+        1. 'ok' - True to push lowerCaseLetters to be part of the PW. 
         2. 'cancel' - False! 
-    3. Would you like Upper case for your PW?
-        1. 'ok' - True to push uppercase to be part of the PW. 
+    3. Would you like Upper Case letters for your PW?
+        1. 'ok' - True to push upperCaseLetters to be part of the PW. 
         2. 'cancel' - False!   
-    4. Would you like special symbols/characters for your PW?
-        1. 'ok' - True to push uppercase to be part of the PW. 
+    4. Would you like special symbols/specialcharacters for your PW?
+        1. 'ok' - True to push symbols/specialcharacters to be part of the PW. 
         2. 'cancel' - False! 
-    5. Would you like special symbols/characters for your PW?
-        1. 'ok' - True to push uppercase to be part of the PW. 
+    5. Would you like special numbers for your PW?
+        1. 'ok' - True to push numbers to be part of the PW. 
         2. 'cancel' - False! 
 3. Based on the user selection a password will need to be generated containing the categories been pushed and at the length the user chose (between 8-128). 
 
@@ -71,23 +71,22 @@ Step 6 - A result is diplayed in the window below.
 
 ## Links
 - Github link for reference is below: 
-https://github.com/liamok19/liamo_portfolio.git
+https://github.com/liamok19/passwordGeneratorJS.git
 
 - Website Link for reference is below: 
-https://liamok19.github.io/liamo_portfolio/
+https://liamok19.github.io/passwordGeneratorJS/
 
 ## Credits
 
 Based on the research I found the following sources that I would like to credit for this project: 
 | Source        | Platform      | Other  |
 | ------------- |:-------------:| -----:|
-| MONUiXD    | Youtube      |Title: Basic Wireframing - HTML & CSS | 
+| CoderLipi    | Youtube      |Title: JavaScript Tutorial For Beginners To Experts  | 
 | #ask your classmaters | Slack      |Conversations between instructors and classmates |
-| MDN Web Docs   | MDN Web Docs       | Title: linear-gradient() |
-| Markdown Guide | Markdown Guide |Title: https://www.markdownguide.org/cheat-sheet/ |
-| dcode    | Youtube      |Title: Easily Add Social Media Icon Links to Your Website with HTML & CSS| 
-| freeCodeCamp.org    | Youtube      |Title: Build and deploy a portfolio website [Full Tutorial Course]| 
-| Lisa Friedrichsen    | Youtube      |Title: Using html 5 wireframe tags| 
+| The Net Ninja   | Youtube     | Title: JavaScript Tutorials for Beginners |
+| The Net Ninja   | Youtube     | Title: JavaScript ES6 Tutorial #5 - The Spread Operator |
+| Automation Step by Step    | Youtube      |Title: JavaScript Beginners Tutorial 11 | Type Operators | 
+| w3schools    | w3schools   |Title: JavaScript Tutorials | 
 
 
 
