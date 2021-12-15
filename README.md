@@ -4,30 +4,22 @@
 
 1. Decalre variables at the beginning. Strings for each category. Numbers, Symbols, lowcaseAlphabet and UppercaseAlphabet. 
 2. Objective. When the user clicks the "Generator button" an alert box pop up and asks the following: 
-    1. Would you like Upper case for your PW?
+    1. How many numbers from 8-128 would you like to choose from.
+        1. Window alert. User must provide a value within these constraints. 
+        2. Window alert. User must provide a number with these constraints.
+    2. Would you like Upper case for your PW?
         1. 'ok' - True to push uppercase to be part of the PW. 
-        2. 'cancel' - False to determine all lower case. 
-    2. How many numbers from 0-99 would you like to choose from.
-    3. Would you like special symbols/characters for your PW?
-        1. 'y' - yes and it will send you to another category box.
-            1. y (true) is determined by the special characters added into the box. 
-        2. 'n' - no (false) it will then move onto the next step.
-3. Based on the user selection a password will need to generate a PW from 8-128 characters long based on the results above. 
-
-
-
-# passwordGeneratorJS
-
-## Description
-- The objective was to create a portfolio website using Github pages as a bridge. The web page must be web accesible and have a visual treatment review. 
-- A wireframe process will need to be created before implementation
-- It was important that this review included a web accesibility and easy access for inclusive purposes. 
-- The web page must:
-- - Look good on a mobile device as well as desktop
-- - Should have a navigation at the top.  When clicking these links it should take you to the relevant section on the page
-- - Should have information about me (a bio)
-- - Should have one main project link that is bigger than the others
-- The biggest hurdle was the mobile responsiveness but once applying the appropriate media query in my CSS file it adapted the page accordingly. 
+        2. 'cancel' - False! 
+    3. Would you like Upper case for your PW?
+        1. 'ok' - True to push uppercase to be part of the PW. 
+        2. 'cancel' - False!   
+    4. Would you like special symbols/characters for your PW?
+        1. 'ok' - True to push uppercase to be part of the PW. 
+        2. 'cancel' - False! 
+    5. Would you like special symbols/characters for your PW?
+        1. 'ok' - True to push uppercase to be part of the PW. 
+        2. 'cancel' - False! 
+3. Based on the user selection a password will need to be generated containing the categories been pushed and at the length the user chose (between 8-128). 
 
 ## Table of Contents
 - [Strategy](#strategy)
@@ -39,19 +31,20 @@
 ## Strategy
 
 1. Review the objective of the assignment and plan Computational Thinking. Decomposition, Pattern recognition, Abstraction and Algorithim. 
-2. Build a wireframe (image reference below)
 3. Create a repository first via github. Whilst including the new repo make sure that it's set to 'Public' and that you have the READme file attached. 
 4. Git clone to your local server. 
-5. Open both the HTML and CSS make sure that the CSS is linking up with the HTML. 
-6. Refrencing the wireframe created, begin to build the box/es planned for this assignment. 
-7. Go back to the goals that you have listed in Step 1 and work through them. 
-8. Throughout the process continue to git commit messages of your updates and push to github. While you're pushing to github make sure your pushing the local folder so your work also versions up to github. 
-9. Once your web page is looking like the objective set by the instructors deploy Github Link. 
+5. Open the HTML, CSS and JS provided. Make sure that the CSS and JS are linking up with the HTML. 
+6. JS to be at the bottom of the HTML body. Easier for browsert to load. 
+2. Write out pseudo code for the operation. 
+8. Go back to the goals that you have listed in Step 1 and work through them. 
+9. Throughout the process continue to git commit messages of your updates and push to github. While you're pushing to github make sure your pushing the local folder so your work also versions up to github. 
+10. Once the Generator PW site is looking like the objective set by the instructors deploy Github Link. 
 
 ## Assets
-The following image is a representation of the wireframe I worked towards for this assignment: 
+User Steps 
 
-![createAWireframe](../liamo_portfolio/assets/images/createaWireframe.jpg)
+![step1user](../passwordGeneratorJS/assets/images/reference/step1user)
+
 
 The following image demonstrates the web application's default appearance and functionality: 
 
