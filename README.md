@@ -16,7 +16,7 @@
     4. Would you like special symbols/specialcharacters for your PW?
         1. 'ok' - True to push symbols/specialcharacters to be part of the PW. 
         2. 'cancel' - False! 
-    5. Would you like special numbers for your PW?
+    5. Would you like numbers for your PW?
         1. 'ok' - True to push numbers to be part of the PW. 
         2. 'cancel' - False! 
 3. Based on the user selection a password will need to be generated containing the categories been pushed and at the length the user chose (between 8-128). 
@@ -34,7 +34,7 @@
 3. Create a repository first via github. Whilst including the new repo make sure that it's set to 'Public' and that you have the READme file attached. 
 4. Git clone to your local server. 
 5. Open the HTML, CSS and JS provided. Make sure that the CSS and JS are linking up with the HTML. 
-6. JS to be at the bottom of the HTML body. Easier for browsert to load. 
+6. JS to be at the bottom of the HTML body. Easier for browser to load. 
 2. Write out pseudo code for the operation. 
 8. Go back to the goals that you have listed in Step 1 and work through them. 
 9. Throughout the process continue to git commit messages of your updates and push to github. While you're pushing to github make sure your pushing the local folder so your work also versions up to github. 
@@ -44,30 +44,30 @@
 User Steps 
 
 Step1 - User is prompt with the following:
-![step1user](../passwordGeneratorJS/assets/images/reference/step1user.JPG)
+![step1user](./assets/images/reference/step1user.JPG)
 
 Step 1 (a) Alert when user doesn't put a number in between 8-128. 
-![step1_a_user](../passwordGeneratorJS/assets/images/reference/step1_a_user.JPG)
+![step1_a_user](./assets/images/reference/step1_a_user.JPG)
 
 Step 1 (b) Alert when user doesn't put in a number. 
-![step1_b_user](../passwordGeneratorJS/assets/images/reference/step1_b_user.JPG)
+![step1_b_user](./assets/images/reference/step1_b_user.JPG)
 
 Step2 - User is prompt with the following. Click ok to include chosen category in PW.
-![step2number](../passwordGeneratorJS/assets/images/reference/step2_number.JPG)
+![step2number](./assets/images/reference/step2_number.JPG)
 
 Step3 - User is prompt with the following. Click ok to include chosen category in PW.
-![step3symbol](../passwordGeneratorJS/assets/images/reference/step3_symbol.JPG)
+![step3symbol](./assets/images/reference/step3_symbol.JPG)
 
 Step4 - User is prompt with the following. Click ok to include chosen category in PW.
-![step4lowercaseletters](../passwordGeneratorJS/assets/images/reference/step4_lowerCaseLetters.JPG)
+![step4lowercaseletters](./assets/images/reference/step4_lowerCaseLetters.JPG)
 
 Step5 - User is prompt with the following. Click ok to include chosen category in PW.
-![step4uppercaseletters](../passwordGeneratorJS/assets/images/reference/step5_upperCaseLetters.JPG)
+![step4uppercaseletters](./assets/images/reference/step5_upperCaseLetters.JPG)
 
 *cue drum roll*
 
 Step 6 - A result is diplayed in the window below. 
-![step6_result](../passwordGeneratorJS/assets/images/reference/step6_result.JPG)
+![step6_result](./assets/images/reference/step6_result.JPG)
 
 ## Links
 - Github link for reference is below: 
