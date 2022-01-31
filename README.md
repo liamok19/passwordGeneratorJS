@@ -1,4 +1,16 @@
-# passwordGeneratorJS
+# Password Generator
+
+## Links
+- Github link for reference is below: 
+https://github.com/liamok19/passwordGeneratorJS.git
+
+        Contact Information in the below link:
+
+- Website Link for reference is below: 
+https://liamok19.github.io/passwordGeneratorJS/
+
+
+Strategy:
 
 * Key: PW = Password.
 
@@ -25,6 +37,7 @@
 - [Strategy](#strategy)
 - [Assets](#assets)
 - [Links](#links)
+- [Technologies Implemented](#Technologies)
 - [Credits](#credits)
 - [License](#license)
 
@@ -69,12 +82,11 @@ Step5 - User is prompt with the following. Click ok to include chosen category i
 Step 6 - A result is diplayed in the window below. 
 ![step6_result](./assets/images/reference/step6_result.JPG)
 
-## Links
-- Github link for reference is below: 
-https://github.com/liamok19/passwordGeneratorJS.git
-
-- Website Link for reference is below: 
-https://liamok19.github.io/passwordGeneratorJS/
+## Technologies:
+- HTML 
+- CSS
+- JavaScript 
+- Github
 
 ## Credits
 
